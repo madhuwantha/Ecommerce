@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HomePageProductComponent implements OnInit {
 
   constructor() { }
-
+  // @ts-ignore
+  i = [1, 2, 3, 5, 5, 5, 5, 5] ;
   ngOnInit() {
   }
 

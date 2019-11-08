@@ -28,6 +28,11 @@ import { ProductAddComponent } from './Component/Seller/product-add/product-add.
 import { HomeComponent } from './Component/HomePage/home/home.component';
 import {FormsModule} from '@angular/forms';
 import { MenuComponent } from './Component/CategoryMenu/menu/menu.component';
+import {MatCardModule} from '@angular/material/card';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material';
+
+
 
 @NgModule({
   declarations: [
@@ -55,12 +60,15 @@ import { MenuComponent } from './Component/CategoryMenu/menu/menu.component';
     SellerNavBarComponent,
     ProductAddComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
